@@ -18,7 +18,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
+      - run: touch gpai
       - run: ls
+      - run: mkdir api
   build-run:
     name: build-runing
     runs-on: ubuntu-latest
@@ -28,4 +30,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-      - run: echo "Testing"
+      - run: ls
