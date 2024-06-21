@@ -5,3 +5,4 @@ An Chat GPT API for Home Application
 2. Connect
 3. Ping application
 4. Receive signal
+5. Triger signal
